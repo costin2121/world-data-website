@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>COVID-19</h1>
+    <select name="countrySelector" id="country-selector">
+        <option value="Romania">Romania</option>
+        <option value="US">USA</option>
+        <option value="India">India</option>
+        <option value="China">China</option>
+        <option value="Germany">Germany</option>
+    </select>
+    <button id="see-stats-btn">See Stats</button>
+    <ul>
+        <li><h4 id="country">Country: None</h4></li>
+        <li id="cases">Cases 😷: 0</li>
+        <li id="deaths">Deaths 💀: 0</li>
+        <li id="cured">Cured 💉: 0</li>
+    </ul>
+    <br>
+    <h1>WEATHER</h1>
+    <input type="text" placeholder="City Name" id="city-name-input">
+    <button id="getWeather-btn">Get Weather Data</button>
+
+    <ul>
+        <li><h4>City: <span id="cityname">None</span>, <span id="countryname">No Country</span></h4></li>
+        <li id="temp">Temperature 🔥: <span id="celsius">0</span>°C | <span id="farenheight">0</span>°F</li>
+        <li id="wind_speed">Wind Speed 💨: <span id="speed_kph">0</span> KM/H | <span id="speed_mph">0</span> MPH</li>
+        <li>Humidity 🥶: <span id="humidity">0</span></li>
+        <li id="feels_like">Feels Like 🖐: <span id="flCelius">0</span>°C | <span id="flFaren">0</span>°F</li>
+    </ul>
+    <script src="script.js"></script>
+</body>
+</html>
