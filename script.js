@@ -16,6 +16,8 @@ const cases = document.getElementById("cases");
 const deaths = document.getElementById("deaths");
 const cured = document.getElementById("cured");
 
+
+// fetch for covid stats on button click
 seeStatsBtn.addEventListener("click", () => {
   const url = `https://covid-api.mmediagroup.fr/v1/cases?country=${countryInput.value}`;
   fetch(url)
@@ -30,6 +32,8 @@ seeStatsBtn.addEventListener("click", () => {
       cured.innerText = `Cured 💉: ${cdata.recovered.toLocaleString("en-US")}`;
     });
 });
+
+// fetch  for weather on button click
 
 getWeatherDataBtn.addEventListener("click", () => {
   if (cityInput.value.length <= 0) {
